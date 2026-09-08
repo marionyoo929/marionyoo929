@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="812" height="1528" viewBox="0 0 812 1528" role="img" aria-labelledby="title">
+<title id="title">Sion Yoo GitHub profile</title>
+<defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="3" dy="8" stdDeviation="3" flood-color="#000" flood-opacity=".22"/></filter></defs>
+<rect width="812" height="1808" fill="#fff"/>
+
+<!-- diagonal decoration copied from the reference -->
+<path d="M812 72 545 492h38L812 133z" fill="#d4d4ee"/>
+<path d="M812 178 602 509h29L812 224z" fill="#f0f0f0"/>
+<path d="M812 397 653 646h35l124-194z" fill="#c7c7e7"/>
+
+<!-- greeting -->
+<text x="74" y="174" font-family="Arial, sans-serif" font-size="57" font-weight="800" letter-spacing="-2" fill="#11125c">HELLO</text>
+<text x="74" y="246" font-family="Arial, sans-serif" font-size="57" font-weight="800" letter-spacing="-2" fill="#11125c">EVERYONE</text>
+<text x="74" y="302" font-family="Arial, sans-serif" font-size="27" fill="#23232b">My name is Sion</text>
+
+<!-- information -->
+<g transform="translate(0 -280)">
+<rect x="74" y="664" width="178" height="39" rx="20" fill="#fff" stroke="#8c8c91" stroke-width="1.5"/>
+<text x="163" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#35353c">Information</text>
+<rect x="76" y="720" width="674" height="366" rx="8" fill="#f6f6f6" stroke="#55555c" stroke-width="2" filter="url(#shadow)"/>
+<text x="100" y="777" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#24242b">Name : Sion Yoo</text>
+<text x="100" y="816" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#24242b">Experiences : KNIGA 19–23 | KDMHS WP 25</text>
+
+<text x="100" y="867" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#292930">Languages</text>
+<text x="100" y="898" font-family="Arial, sans-serif" font-size="16" fill="#393940">Python</text>
+<text x="100" y="926" font-family="Arial, sans-serif" font-size="16" fill="#393940">JavaScript</text>
+<text x="100" y="954" font-family="Arial, sans-serif" font-size="16" fill="#393940">C</text>
+<text x="100" y="982" font-family="Arial, sans-serif" font-size="16" fill="#393940">HTML / CSS</text>
+
+<text x="438" y="867" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#292930">Frameworks &amp; Platforms</text>
+<text x="438" y="898" font-family="Arial, sans-serif" font-size="16" fill="#393940">React</text>
+<text x="438" y="926" font-family="Arial, sans-serif" font-size="16" fill="#393940">Firebase</text>
+<text x="438" y="954" font-family="Arial, sans-serif" font-size="16" fill="#393940">Vercel</text>
+<text x="438" y="982" font-family="Arial, sans-serif" font-size="16" fill="#393940">Linux</text>
+
+<text x="100" y="1022" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#292930">Physical Computing</text>
+<text x="100" y="1051" font-family="Arial, sans-serif" font-size="16" fill="#393940">Arduino</text>
+<text x="220" y="1051" font-family="Arial, sans-serif" font-size="16" fill="#393940">MODI kit</text>
+<text x="323" y="1051" font-family="Arial, sans-serif" font-size="16" fill="#393940">Physical AI</text>
+
+<text x="438" y="1022" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#292930">Others</text>
+<text x="438" y="1051" font-family="Arial, sans-serif" font-size="16" fill="#393940">Product planning</text>
+<text x="594" y="1051" font-family="Arial, sans-serif" font-size="16" fill="#393940">Traditional Harmony</text>
+
+<!-- representative projects -->
+<rect x="74" y="1129" width="286" height="40" rx="20" fill="#17185f"/>
+<text x="217" y="1155" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#fff">Representative Projects</text>
+<rect x="76" y="1185" width="674" height="214" rx="8" fill="#f6f6f6" stroke="#55555c" stroke-width="2" filter="url(#shadow)"/>
+<g font-family="Arial, sans-serif" font-size="14.5">
+<text x="99" y="1220" fill="#302977" font-weight="700">Lawver4all</text><text x="179" y="1220" fill="#303038"> | law analysis service</text>
+<text x="99" y="1248" fill="#302977" font-weight="700">SeaGNal</text><text x="167" y="1248" fill="#303038"> | AI smart buoy for ocean and aquaculture forecasting</text>
+<text x="99" y="1276" fill="#302977" font-weight="700">Re:Fill</text><text x="145" y="1276" fill="#303038"> | Smart inventory prediction for daily essentials</text>
+<text x="99" y="1304" fill="#302977" font-weight="700">Cloud+</text><text x="154" y="1304" fill="#303038"> | Cloud Resource Optimization System Utilizing AI-Based Traffic Prediction</text>
+<text x="99" y="1332" fill="#302977" font-weight="700">VisitPass</text><text x="166" y="1332" fill="#303038"> | QR-based visitor verification system</text>
+<text x="99" y="1360" fill="#302977" font-weight="700">Sea-AT</text><text x="151" y="1360" fill="#303038"> | AI-powered seashell blocks for ocean acidification</text>
+<text x="99" y="1388" fill="#302977" font-weight="700">CADA</text><text x="144" y="1388" fill="#303038"> | B2B card delivery scheduling service</text>
+</g>
+
+<!-- contribution area -->
+<rect x="74" y="1446" width="380" height="39" rx="20" fill="#fff" stroke="#8c8c91" stroke-width="1.5"/>
+<text x="264" y="1472" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#35353c">0 contributions in the last year</text>
+<rect x="76" y="1513" width="674" height="204" rx="8" fill="#f6f6f6" stroke="#55555c" stroke-width="2" filter="url(#shadow)"/>
+</g>
+</svg>
