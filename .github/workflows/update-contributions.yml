@@ -13,61 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Generate contribution SVG
-        uses: actions/github-script@v7
+      - uses: actions/setup-node@v4
         with:
-          script: |
-            const fs = require('fs');
-            const login = 'marionyoo929';
-            const result = await github.graphql(`
-              query($login: String!) {
-                user(login: $login) {
-                  contributionsCollection {
-                    contributionCalendar {
-                      totalContributions
-                      weeks {
-                        firstDay
-                        contributionDays { weekday contributionLevel }
-                      }
-                    }
-                  }
-                }
-              }
-            `, { login });
-            const calendar = result.user.contributionsCollection.contributionCalendar;
-            const weeks = calendar.weeks.slice(-53);
-            const colors = {
-              NONE: '#e5e5ec', FIRST_QUARTILE: '#d2d2ed',
-              SECOND_QUARTILE: '#a8a8d7', THIRD_QUARTILE: '#7172b5',
-              FOURTH_QUARTILE: '#17185f'
-            };
-            const size = 10, gap = 3, startX = 67, startY = 110;
-            const cells = weeks.flatMap((week, x) => week.contributionDays.map(day =>
-              `<rect x="${startX + x * 13}" y="${startY + day.weekday * 13}" width="${size}" height="${size}" rx="2.5" fill="${colors[day.contributionLevel]}"/>`
-            )).join('');
-            let oldMonth = -1;
-            const months = weeks.map((week, x) => {
-              const date = new Date(`${week.firstDay}T00:00:00Z`);
-              if (date.getUTCMonth() === oldMonth) return '';
-              oldMonth = date.getUTCMonth();
-              const label = date.toLocaleString('en-US', {month:'short', timeZone:'UTC'});
-              return `<text x="${startX + x * 13}" y="99" font-family="Arial,sans-serif" font-size="10" fill="#73737c">${label}</text>`;
-            }).join('');
-            const total = calendar.totalContributions;
-            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="812" height="245" viewBox="0 0 812 245">
-              <title>${total} contributions in the last year</title>
-              <defs><filter id="s"><feDropShadow dx="2" dy="5" stdDeviation="3" flood-opacity=".18"/></filter></defs>
-              <rect width="812" height="245" fill="#fff"/>
-              <rect x="38" y="18" width="305" height="38" rx="19" fill="#fff" stroke="#8c8c91"/>
-              <text x="190" y="43" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#35353c">${total} contributions in the last year</text>
-              <rect x="38" y="72" width="736" height="145" rx="8" fill="#f6f6f6" stroke="#55555c" stroke-width="2" filter="url(#s)"/>
-              ${months}
-              <text x="46" y="137" font-family="Arial,sans-serif" font-size="9" fill="#73737c">Mon</text>
-              <text x="46" y="163" font-family="Arial,sans-serif" font-size="9" fill="#73737c">Wed</text>
-              <text x="46" y="189" font-family="Arial,sans-serif" font-size="9" fill="#73737c">Fri</text>
-              ${cells}
-            </svg>`;
-            fs.writeFileSync('contribution.svg', svg);
+          node-version: "20"
+      - name: Generate contribution SVG
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: marionyoo929
+        run: node scripts/generate-contributions.mjs
       - name: Commit updated graph
         run: |
           git config user.name "github-actions[bot]"
