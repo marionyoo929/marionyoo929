@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="812" height="1528" viewBox="0 0 812 1528" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" width="812" height="1160" viewBox="0 0 812 1160" role="img" aria-labelledby="title">
 <title id="title">Sion Yoo GitHub profile</title>
 <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="3" dy="8" stdDeviation="3" flood-color="#000" flood-opacity=".22"/></filter></defs>
 <rect width="812" height="1808" fill="#fff"/>
@@ -56,9 +56,5 @@
 <text x="99" y="1388" fill="#302977" font-weight="700">CADA</text><text x="144" y="1388" fill="#303038"> | B2B card delivery scheduling service</text>
 </g>
 
-<!-- contribution area -->
-<rect x="74" y="1446" width="380" height="39" rx="20" fill="#fff" stroke="#8c8c91" stroke-width="1.5"/>
-<text x="264" y="1472" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#35353c">0 contributions in the last year</text>
-<rect x="76" y="1513" width="674" height="204" rx="8" fill="#f6f6f6" stroke="#55555c" stroke-width="2" filter="url(#shadow)"/>
 </g>
 </svg>
